@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Sora;
+  src: url("./assets/fonts/Sora-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: PoppinsB;
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Unbounded;
+  src: url("./assets/fonts/Unbounded-Bold.ttf");
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Poppins;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: Sora;
+}
+
+h3 {
+  font-family: PoppinsB;
+}
+
+.Sora {
+  font-family: Sora;
+}
+
+.Poppins {
+  font-family: Poppins;
+}
+
+.PoppinsB {
+  font-family: PoppinsB;
+}
+
+.Unbounded {
+  font-family: Unbounded;
+}
+
+.shade {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+button,
+a {
+  padding: 5px 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.exc a {
+  padding: 0 5px;
+  cursor: pointer;
+}
+.exce a {
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.exc a:hover {
+  color: blue;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.exce a:hover {
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.b2 {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.b2:hover {
+  background-color: white;
+  color: black;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.blurc {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 2px solid white;
+  backdrop-filter: blur(5px);
+  z-index: 0;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.change :nth-child(1) {
+  transform: translate(0, 10px) rotate(-45deg);
+}
+.change :nth-child(2) {
+  opacity: 0;
+}
+.change :nth-child(3) {
+  transform: translate(0, -10px) rotate(45deg);
+}
+
+.blur-xxs {
+  backdrop-filter: blur(3px);
+}
+
+.subtle-noise {
+  background-color: #242424;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.08) 1px,
+    transparent 0
+  );
+  background-size: 15px 15px;
+}
+
+.trans {
+  transition: 0.4s;
+}
+
+.trans-right:hover {
+  transform: translate(5px, 0);
+}
+
+.static-noise {
+  position: relative;
+  background-color: #242424;
+}
+
+.static-noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.0' numOctaves='4' stitchTiles='stitch' /%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)' /%3E%3C/svg%3E");
+  opacity: 0.05;
+  z-index: 0;
+  pointer-events: none;
+}
+
+textarea {
+  resize: none;
+}
