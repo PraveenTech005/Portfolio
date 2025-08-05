@@ -1,14 +1,14 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { LuDownload } from "react-icons/lu";
 import { SiGmail } from "react-icons/si";
-import Resume from "../assets/Praveen.pdf";
+import Resume from "/Praveen.pdf";
 
 const Hero = () => {
   const resumeRef = useRef();
   return (
     <div
-      className="w-full min-h-screen bg-[url('/src/assets/img/bg-p.jpg')] lg:bg-[url('/src/assets/img/bg.jpg')] bg-cover bg-center bg-no-repeat z-0 flex flex-row justify-evenly lg:justify-between text-white"
+      className="w-full min-h-screen bg-[url('/img/bg-p.jpg')] lg:bg-[url('/img/bg.jpg')] bg-cover bg-center bg-no-repeat z-0 flex flex-row justify-evenly lg:justify-between text-white"
       id="home"
     >
       <div className="w-full lg:w-6/12 flex flex-row justify-end p-5">

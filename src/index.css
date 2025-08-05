@@ -2,22 +2,22 @@
 
 @font-face {
   font-family: Sora;
-  src: url("./assets/fonts/Sora-Bold.ttf");
+  src: url("../public/fonts/Poppins-Medium.ttf");
 }
 
 @font-face {
   font-family: Poppins;
-  src: url("./assets/fonts/Poppins-Regular.ttf");
+  src: url("../public/fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
   font-family: PoppinsB;
-  src: url("./assets/fonts/Poppins-Medium.ttf");
+  src: url("../public/fonts/Poppins-Medium.ttf");
 }
 
 @font-face {
   font-family: Unbounded;
-  src: url("./assets/fonts/Unbounded-Bold.ttf");
+  src: url("../public/fonts/Unbounded-Bold.ttf");
 }
 
 html,

@@ -39,7 +39,7 @@ const About = () => {
       <div className="flex-1 flex flex-col lg:flex-row justify-evenly items-center space-y-10 lg:space-y-0">
         <div className="w-11/12 lg:w-1/4 flex flex-col space-y-5 p-3 justify-center items-center blurc">
           <img
-            src="/src/assets/img/Praveen.jpg"
+            src="/img/Praveen.jpg"
             alt="Praveen"
             className="w-40 h-40 border-2 rounded-full"
           />
